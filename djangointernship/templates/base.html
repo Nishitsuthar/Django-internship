@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Free Alpha Studio Web Templates</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="en" />
+    <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="header">
+        <div id="header_left">
+          <div id="logo">
+            <h1>My Learning Point</h1>
+            <h2>Designed by Alpha Studio</h2>
+          </div>
+          <div id="search">
+            <form method="get" action="#" accept-charset="utf-8">
+              <input type="text" class="text" />
+              <input type="submit" class="submit" value="" />
+            </form>
+          </div>
+        </div>
+        <div id="menu">
+          <ul>
+            <li><a class="active" href="/">home</a></li>
+            <li><a href="about">about us</a></li>
+            <li><a href="contact">contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="middle">
+  <div id="left">
+    <h3>Technologies</h3>
+    <div class="box_sm1">
+      <div class="box_sm2">
+        <ul>
+          <li><a href="#">python</a></li>
+          <li><a href="#">PHP</a></li>
+          <li><a href="#">C++</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">Ruby</a></li>
+          <li><a href="#">javascript</a></li>
+          <li><a href="#">aspnet</a></li>
+        </ul>
+      </div>
+    </div>
+    <h3>FrameWorks</h3>
+    <div class="box_sm1">
+      <div class="box_sm2">
+        <ul>
+          <li><a href="#">NodeJS</a></li>
+          <li><a href="#">Django</a></li>
+          <li><a href="#">Flask</a></li>
+          <li><a href="#">Angular</a></li>
+          <li><a href="#">React</a></li>
+          <li><a href="#">Bootstrap</a></li>
+          <li><a href="#">Express</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+      {% block content %} {% endblock %}
+
+      <div id="footer">
+        <p>
+          <a href="#">lorem</a> | <a href="#">ipsum</a> |
+          <a href="#">dolor sit amet</a> | <a href="#">maecenas</a> |
+          <a href="#">venenatis</a> | <a href="#">rhoncus nulla</a>
+        </p>
+        <p id="copyinfo">
+          Copyright &copy; Your Name, Designed by
+          <a href="http://www.alphastudio.pl" target="_blank">Alpha Studio</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
