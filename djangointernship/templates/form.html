@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+  <div id="right">
+    <h3>Terms of use</h3>
+    <div class="box1">
+      <div class="box2">
+        <form method="post" action="/process">
+            {% csrf_token %}
+            Num1 :- <input type="number" name="num1" required/><br/>
+            Num2 :- <input type="number" name="num2" required/><br/>
+            <input type="submit" value="add">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
