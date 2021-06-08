@@ -1,5 +1,8 @@
+from myapp.models import Student
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.views.generic import ListView
+from .models import Student
 
 
 def homepageview(request):
@@ -53,6 +56,11 @@ def userdataview(request):
             "my_mobile": mobile,
         },
     )
+
+
+class student_list(ListView):
+    model = Student
+    template_name = "slist.html"
 
 
 # Create your views here.
